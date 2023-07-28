@@ -14,7 +14,7 @@ for (let i = 0; i < myNodelist.length; i++) {
 const closeBtn: HTMLCollectionOf<Element> =
   document.getElementsByClassName("close");
 for (let i = 0; i < closeBtn.length; i++) {
-	closeBtn[i].addEventListener("click", (event) => {
+  closeBtn[i].addEventListener("click", (event) => {
     let target: HTMLElement = event.target as HTMLElement;
     let div: HTMLElement = target.parentElement as HTMLElement;
     div.style.display = "none";
@@ -57,9 +57,9 @@ function newElement(): void {
 
   for (let i = 0; i < closeBtn.length; i++) {
     closeBtn[i].addEventListener("click", (event) => {
-		let target: HTMLElement = event.target as HTMLElement;
-		let div: HTMLElement = target.parentElement as HTMLElement;
-		div.style.display = "none";
+      let target: HTMLElement = event.target as HTMLElement;
+      let div: HTMLElement = target.parentElement as HTMLElement;
+      div.style.display = "none";
     });
   }
 }
